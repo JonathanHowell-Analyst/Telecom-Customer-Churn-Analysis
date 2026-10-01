@@ -77,4 +77,22 @@ df["customer_service_calls"] = (
     .fillna(service_calls_median)
 )
 
+
+# --------------------------------------------------
+# 3. GEOGRAPHIC CHURN ANALYSIS
+# --------------------------------------------------
+
+# Calculate the churn rate for each city.
+city_churn = (
+    df.groupby("city")["churn"]
+    .mean()
+    .sort_values(ascending=False)
+)
+
+# Select the four cities with the highest churn rates.
+top_four_cities = city_churn.head(4)
+
+print("\nTop 4 Cities by Churn Rate:")
+print(top_four_cities)
+
 print("\nCustomer service calls cleaned.")
