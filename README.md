@@ -113,3 +113,16 @@ Based on the analysis, I would recommend a targeted retention strategy focused o
 ### Recommended Retention Workflow
 
 `Customer shows risk signal → Customer is flagged → Retention team contacts customer → Targeted offer or support is provided`
+
+## Project Files
+
+- **`telecom_churn_original_analysis.pdf`** — Original completed project containing the analysis, code, outputs and visualisations from the Data Analytics course.
+- **`churn_analysis.py`** — Clean portfolio reconstruction of the analytical workflow based on the code and methodology preserved in the original project.
+
+### Note on Reproducibility
+
+The original Jupyter Notebook (`.ipynb`) and SQLite database (`telco_churn.db`) are no longer available.
+
+For transparency, the original completed project has been preserved as a PDF. The Python script in this repository reconstructs the core analytical workflow from that original work and is provided to make the methodology easier to review.
+
+Because the original database is unavailable, the reconstructed script cannot currently be executed end-to-end using the original dataset.
