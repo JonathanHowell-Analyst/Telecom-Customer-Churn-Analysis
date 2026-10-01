@@ -200,3 +200,37 @@ print(
         ]
     ].head(10)
 )
+
+
+# --------------------------------------------------
+# 7. EXPORT RETENTION TARGET LIST
+# --------------------------------------------------
+
+# Select the information needed by the retention team.
+retention_targets = high_risk_customers[
+    [
+        "phone_num",
+        "city",
+        "total_day_charge",
+        "customer_service_calls",
+        "international_plan",
+        "predicted_churn_prob"
+    ]
+].copy()
+
+# Sort customers from highest to lowest predicted churn risk.
+retention_targets = retention_targets.sort_values(
+    by="predicted_churn_prob",
+    ascending=False
+)
+
+# Export the customer list as a CSV file.
+retention_targets.to_csv(
+    "retention_targets.csv",
+    index=False
+)
+
+print(
+    f"\nRetention target list created: "
+    f"{len(retention_targets)} customers"
+)
