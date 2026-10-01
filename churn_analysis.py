@@ -52,3 +52,29 @@ connection.close()
 print("Dataset loaded successfully")
 print(f"Rows: {df.shape[0]}")
 print(f"Columns: {df.shape[1]}")
+
+
+# --------------------------------------------------
+# 2. DATA CLEANING
+# --------------------------------------------------
+
+# Check the dataset for missing values.
+print("\nMissing values before cleaning:")
+print(df.isna().sum())
+
+# Negative customer service call counts are invalid.
+# Convert these impossible values to missing values.
+df.loc[
+    df["customer_service_calls"] < 0,
+    "customer_service_calls"
+] = np.nan
+
+# Replace missing customer service call values with the median.
+service_calls_median = df["customer_service_calls"].median()
+
+df["customer_service_calls"] = (
+    df["customer_service_calls"]
+    .fillna(service_calls_median)
+)
+
+print("\nCustomer service calls cleaned.")
