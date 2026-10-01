@@ -66,3 +66,14 @@ After comparing the numerical count variables, customer service calls showed the
 Customers making more than three calls to customer service showed substantially higher churn rates.
 
 **Business implication:** Customers who exceed three customer service calls should be flagged for proactive retention support. Repeated contact may indicate unresolved problems or growing customer dissatisfaction.
+### 4. Predicting Churn Risk with Logistic Regression
+
+Among the continuous variables analysed, `total_day_charge` showed the clearest separation between customers who churned and those who remained.
+
+A logistic regression model was used to estimate each customer's probability of churn based on their total daytime charges.
+
+A **35% predicted churn probability** was used as an early-intervention threshold to identify higher-risk active customers.
+
+Customers who had already churned were excluded because the retention team can only intervene with customers who are still active.
+
+**Business implication:** Active customers whose predicted churn probability reaches 35% or higher can be prioritised for proactive retention campaigns before they leave.
