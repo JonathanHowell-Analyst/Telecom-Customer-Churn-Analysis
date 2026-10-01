@@ -130,3 +130,34 @@ print(
     f"\nActive international-plan customers: "
     f"{len(international_plan_targets)}"
 )
+
+
+# --------------------------------------------------
+# 5. CUSTOMER SERVICE CALL ANALYSIS
+# --------------------------------------------------
+
+# Calculate churn rate by number of customer service calls.
+service_call_churn = (
+    df.groupby("customer_service_calls")["churn"]
+    .mean()
+)
+
+print("\nChurn Rate by Customer Service Calls:")
+print(service_call_churn)
+
+# Customers making more than three service calls
+# showed increased churn risk in the analysis.
+service_call_threshold = 3
+
+# Identify customers who have exceeded the threshold
+# but are still active customers.
+high_risk_service_customers = df[
+    (df["customer_service_calls"] > service_call_threshold) &
+    (df["churn"] == 0)
+]
+
+print(
+    f"\nActive customers with more than "
+    f"{service_call_threshold} service calls: "
+    f"{len(high_risk_service_customers)}"
+)
