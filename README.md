@@ -35,3 +35,15 @@ The analysis identified four cities with the highest customer churn rates:
 | Orlando2 | 19.1% |
 
 **Business implication:** These locations represent priority areas for geographically targeted customer-retention and marketing campaigns.
+### 2. International Plan Customers Showed Much Higher Churn
+
+Customers with an international plan had a substantially higher churn rate than customers without one.
+
+| International Plan | Churn Rate |
+|---|---:|
+| No | 11.5% |
+| Yes | 42.4% |
+
+Customers with an international plan therefore showed a churn rate more than three times higher than customers without one.
+
+**Business implication:** Active customers with an international plan represent an important group for targeted retention efforts. The company should also investigate whether pricing, service quality or the structure of the international plan is contributing to customer dissatisfaction.
