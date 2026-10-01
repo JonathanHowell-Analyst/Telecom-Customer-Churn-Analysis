@@ -13,3 +13,11 @@ The company wanted to use its customer data to answer two key business questions
 2. Which individual customers show signs of being at risk of leaving and should be targeted with retention offers?
 
 The objective of this analysis was to identify the strongest indicators of churn, determine useful risk thresholds, and turn the findings into actionable recommendations for the marketing and customer-retention teams.
+## Tools & Skills
+
+- **Python** — data cleaning, analysis, customer segmentation and predictive modelling
+- **pandas** — data manipulation and preparation
+- **SQL / SQLite** — extracting and combining customer and city data
+- **Matplotlib & Seaborn** — exploratory analysis and data visualisation
+- **Logistic Regression** — estimating customer churn probability
+- **Business Analysis** — translating analytical findings into customer-retention recommendations
