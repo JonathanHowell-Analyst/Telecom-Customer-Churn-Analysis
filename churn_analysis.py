@@ -161,3 +161,42 @@ print(
     f"{service_call_threshold} service calls: "
     f"{len(high_risk_service_customers)}"
 )
+
+
+# --------------------------------------------------
+# 6. LOGISTIC REGRESSION
+# --------------------------------------------------
+
+# Fit a logistic regression model using total daytime
+# charge to estimate customer churn probability.
+model = smf.logit(
+    formula="churn ~ total_day_charge",
+    data=df
+).fit()
+
+print("\nLogistic Regression Results:")
+print(model.summary())
+
+# Calculate a predicted churn probability for each customer.
+df["predicted_churn_prob"] = model.predict(df)
+
+# Use a 35% probability as an early-intervention threshold.
+risk_threshold = 0.35
+
+# Identify higher-risk customers who are still active.
+high_risk_customers = df[
+    (df["predicted_churn_prob"] >= risk_threshold) &
+    (df["churn"] == 0)
+]
+
+print("\nHigh-Risk Active Customers:")
+print(
+    high_risk_customers[
+        [
+            "phone_num",
+            "city",
+            "total_day_charge",
+            "predicted_churn_prob"
+        ]
+    ].head(10)
+)
