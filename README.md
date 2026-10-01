@@ -3,6 +3,18 @@
 ## Identifying High-Risk Customers and Retention Opportunities
 
 A data analytics project using Python, SQL, exploratory data analysis, and logistic regression to identify the factors associated with customer churn and translate the findings into actionable customer-retention strategies.
+## Executive Summary
+
+This project analysed telecommunications customer data to identify where and why customers were most likely to churn.
+
+The analysis identified several actionable risk signals:
+
+- **29.8% churn** in Jacksonville, the highest-churn location
+- **42.4% churn** among customers with an international plan
+- **More than 3 customer service calls** as a warning signal for increased churn
+- **35% predicted churn probability** used as an early-intervention threshold
+
+The findings were translated into a targeted retention strategy combining geographic campaigns, customer-service escalation and predictive customer-risk identification.
 ## Business Problem
 
 Teleconfia, a telecommunications company expanding into the US market, experienced customer churn during a trial period in Florida.
