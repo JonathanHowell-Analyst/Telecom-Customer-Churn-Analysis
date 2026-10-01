@@ -59,3 +59,10 @@ Customers with an international plan had a substantially higher churn rate than 
 Customers with an international plan therefore showed a churn rate more than three times higher than customers without one.
 
 **Business implication:** Active customers with an international plan represent an important group for targeted retention efforts. The company should also investigate whether pricing, service quality or the structure of the international plan is contributing to customer dissatisfaction.
+### 3. Repeated Customer Service Calls Were a Churn Warning Signal
+
+After comparing the numerical count variables, customer service calls showed the clearest relationship with churn.
+
+Customers making more than three calls to customer service showed substantially higher churn rates.
+
+**Business implication:** Customers who exceed three customer service calls should be flagged for proactive retention support. Repeated contact may indicate unresolved problems or growing customer dissatisfaction.
