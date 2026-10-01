@@ -96,3 +96,37 @@ print("\nTop 4 Cities by Churn Rate:")
 print(top_four_cities)
 
 print("\nCustomer service calls cleaned.")
+
+
+# --------------------------------------------------
+# 4. CATEGORICAL CHURN ANALYSIS
+# --------------------------------------------------
+
+# Compare churn rates for the two categorical variables.
+international_plan_churn = (
+    df.groupby("international_plan")["churn"]
+    .mean()
+)
+
+voice_mail_plan_churn = (
+    df.groupby("voice_mail_plan")["churn"]
+    .mean()
+)
+
+print("\nInternational Plan Churn Rates:")
+print(international_plan_churn)
+
+print("\nVoice Mail Plan Churn Rates:")
+print(voice_mail_plan_churn)
+
+# Identify active international-plan customers
+# as a potential retention target group.
+international_plan_targets = df[
+    (df["international_plan"] == "yes") &
+    (df["churn"] == 0)
+]
+
+print(
+    f"\nActive international-plan customers: "
+    f"{len(international_plan_targets)}"
+)
