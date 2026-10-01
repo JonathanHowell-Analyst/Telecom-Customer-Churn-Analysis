@@ -77,3 +77,22 @@ A **35% predicted churn probability** was used as an early-intervention threshol
 Customers who had already churned were excluded because the retention team can only intervene with customers who are still active.
 
 **Business implication:** Active customers whose predicted churn probability reaches 35% or higher can be prioritised for proactive retention campaigns before they leave.
+## Business Recommendations
+
+Based on the analysis, I would recommend a targeted retention strategy focused on four areas:
+
+1. **Prioritise high-churn locations**  
+   Focus geographically targeted marketing campaigns on Jacksonville, Orlando1, Cape Coral and Orlando2, which showed the highest churn rates.
+
+2. **Review international-plan customers**  
+   Customers with an international plan showed substantially higher churn. The company should investigate the pricing, service quality and customer experience associated with this plan and target active international-plan customers with retention offers.
+
+3. **Create a customer-service escalation trigger**  
+   Customers making more than three customer service calls should be flagged for proactive follow-up, as repeated service contact was associated with increased churn.
+
+4. **Use predicted churn probability for early intervention**  
+   Customers with a predicted churn probability of 35% or higher should be prioritised for retention campaigns, while customers who have already churned should be excluded from active retention lists.
+
+### Recommended Retention Workflow
+
+`Customer shows risk signal → Customer is flagged → Retention team contacts customer → Targeted offer or support is provided`
