@@ -47,3 +47,15 @@ Customers with an international plan had a substantially higher churn rate than 
 Customers with an international plan therefore showed a churn rate more than three times higher than customers without one.
 
 **Business implication:** Active customers with an international plan represent an important group for targeted retention efforts. The company should also investigate whether pricing, service quality or the structure of the international plan is contributing to customer dissatisfaction.
+### 2. International Plan Customers Showed Much Higher Churn
+
+Customers with an international plan had a substantially higher churn rate than customers without one.
+
+| International Plan | Churn Rate |
+|---|---:|
+| No | 11.5% |
+| Yes | 42.4% |
+
+Customers with an international plan therefore showed a churn rate more than three times higher than customers without one.
+
+**Business implication:** Active customers with an international plan represent an important group for targeted retention efforts. The company should also investigate whether pricing, service quality or the structure of the international plan is contributing to customer dissatisfaction.
