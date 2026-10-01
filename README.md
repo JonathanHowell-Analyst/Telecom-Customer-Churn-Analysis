@@ -47,6 +47,8 @@ The analysis identified four cities with the highest customer churn rates:
 | Orlando2 | 19.1% |
 
 **Business implication:** These locations represent priority areas for geographically targeted customer-retention and marketing campaigns.
+
+![Top 4 Cities by Customer Churn Rate](images/top_4_cities_churn_rate.png)
 ### 2. International Plan Customers Showed Much Higher Churn
 
 Customers with an international plan had a substantially higher churn rate than customers without one.
