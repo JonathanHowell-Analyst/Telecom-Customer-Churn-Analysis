@@ -49,6 +49,7 @@ The analysis identified four cities with the highest customer churn rates:
 **Business implication:** These locations represent priority areas for geographically targeted customer-retention and marketing campaigns.
 
 ![Top 4 Cities by Customer Churn Rate](images/top_4_cities_churn_rate.png)
+
 ### 2. International Plan Customers Showed Much Higher Churn
 
 Customers with an international plan had a substantially higher churn rate than customers without one.
@@ -61,6 +62,8 @@ Customers with an international plan had a substantially higher churn rate than 
 Customers with an international plan therefore showed a churn rate more than three times higher than customers without one.
 
 **Business implication:** Active customers with an international plan represent an important group for targeted retention efforts. The company should also investigate whether pricing, service quality or the structure of the international plan is contributing to customer dissatisfaction.
+![Customer Churn Rate by International Plan](images/international_plan_churn_rate.png)
+
 ### 2. International Plan Customers Showed Much Higher Churn
 
 Customers with an international plan had a substantially higher churn rate than customers without one.
