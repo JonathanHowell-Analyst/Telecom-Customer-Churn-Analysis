@@ -21,3 +21,17 @@ The objective of this analysis was to identify the strongest indicators of churn
 - **Matplotlib & Seaborn** — exploratory analysis and data visualisation
 - **Logistic Regression** — estimating customer churn probability
 - **Business Analysis** — translating analytical findings into customer-retention recommendations
+## Key Findings
+
+### 1. Geographic Churn Risk
+
+The analysis identified four cities with the highest customer churn rates:
+
+| City | Churn Rate |
+|---|---:|
+| Jacksonville | 29.8% |
+| Orlando1 | 23.7% |
+| Cape Coral | 21.8% |
+| Orlando2 | 19.1% |
+
+**Business implication:** These locations represent priority areas for geographically targeted customer-retention and marketing campaigns.
